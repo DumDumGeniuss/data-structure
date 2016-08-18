@@ -2,8 +2,6 @@
 #include<stdlib.h>
 #include<stdbool.h>
 
-#define MAX_LIST_LENGTH 10
-
 
 void display(char text[], int list[], int length) {
     printf("%s: ", text);
@@ -35,9 +33,7 @@ void bubbleSort(int list[], int length) {
 void main() {
     int list[] = {1, 2, 3, 6, 7, 5, 4, 9, 8, 0};
     int length = sizeof(list)/sizeof(int);
-    char beforeBubbleText[] = "Before bubbling";
-    char afterBubbleText[] = "After bubbling";
-    display(beforeBubbleText, list, length);
+    display("Before bubbling", list, length);
     bubbleSort(list, length);
-    display(afterBubbleText, list, length);
+    display("After bubbling", list, length);
 }

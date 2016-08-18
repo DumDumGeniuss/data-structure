@@ -2,8 +2,6 @@
 #include<stdlib.h>
 #include<stdbool.h>
 
-#define MAX_LIST_LENGTH 10
-
 
 void display(char text[], int list[], int length) {
     printf("%s: ", text);
