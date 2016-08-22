@@ -28,10 +28,11 @@ void insertionSort(int list[], int length) {
     }
 }
 
-void main() {
+int main() {
     int list[] = {7, 9, 3, 6, 0, 5, 4, 2, 8, 1};
     int length = sizeof(list)/sizeof(int);
     display("Before insertion Sort", list, length);
     insertionSort(list, length);
     display("After insertion Sort", list, length);
+    return 0;
 }

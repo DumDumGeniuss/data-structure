@@ -30,10 +30,11 @@ void bubbleSort(int list[], int length) {
     }
 }
 
-void main() {
+int main() {
     int list[] = {1, 2, 3, 6, 7, 5, 4, 9, 8, 0};
     int length = sizeof(list)/sizeof(int);
     display("Before bubbling", list, length);
     bubbleSort(list, length);
     display("After bubbling", list, length);
+    return 0;
 }
